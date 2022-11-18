@@ -11,6 +11,8 @@ public class Animal : MonoBehaviour
 
     [SerializeField] string Name;
 
+
+    // POLYMORPHISM
     public virtual void MakeSound()
     {
         Debug.Log("Playing crickets");
@@ -18,6 +20,7 @@ public class Animal : MonoBehaviour
         audioController.PlayOneShot(clip);
     }
 
+    // POLYMORPHISM
     public virtual void Jump()
     {
         Debug.Log("jumping like a regular Animal");

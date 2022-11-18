@@ -5,8 +5,8 @@ using UnityEngine;
 public class UIController : MonoBehaviour
 {
     public string selectedAnimal;
- 
 
+    // ABSTRACTION
     public void CatButton()
     {
         selectedAnimal = "Cat";
@@ -26,7 +26,7 @@ public class UIController : MonoBehaviour
         Debug.Log("identified as Chick");
     }
 
-
+    // ABSTRACTION
     public void MakeSound()
     {
         switch (selectedAnimal)
@@ -50,7 +50,7 @@ public class UIController : MonoBehaviour
         }   
                 
     }
-
+    // ABSTRACTION
     public void Jump()
     {
         switch (selectedAnimal)
